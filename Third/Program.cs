@@ -47,10 +47,11 @@ void PrintMultiplOfMatrix(int [,] array)
 
 
 int sizeString = new Random().Next(2,5);
-int sizeColumn = new Random().Next(1,5);
+int sizeColumn = new Random().Next(2,5);
+int sizeColumnSecondMatrix = new Random().Next(2,5);
 
 int[,] firstMatrix = new int[sizeString,sizeColumn];
-int[,] secondMatrix = new int[sizeColumn,sizeString];
+int[,] secondMatrix = new int[sizeColumn,sizeColumnSecondMatrix];
 FillAndPrintMatrix(firstMatrix);
 Console.WriteLine("     x");
 FillAndPrintMatrix(secondMatrix);
